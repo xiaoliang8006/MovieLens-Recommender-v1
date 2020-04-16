@@ -7,15 +7,15 @@ import numpy as np
 from sklearn.model_selection import train_test_split
 
 # 2.数据初探
-ratings = pd.read_csv('./ml-latest-small/ratings.csv',index_col=None)
+ratings = pd.read_csv('./data/ml-latest-small/ratings.csv',index_col=None)
 # print(ratings.head(5))
-movies = pd.read_csv('./ml-latest-small/movies.csv',index_col=None)
+movies = pd.read_csv('./data/ml-latest-small/movies.csv',index_col=None)
 # print(movies.head(5))
 
 
 # 3.数据预处理
-moviesPath = './ml-latest-small/movies.csv'
-ratingsPath = './ml-latest-small/ratings.csv'
+moviesPath = './data/ml-latest-small/movies.csv'
+ratingsPath = './data/ml-latest-small/ratings.csv'
 moviesDF = pd.read_csv(moviesPath,index_col=None)
 ratingsDF = pd.read_csv(ratingsPath,index_col=None)
 
